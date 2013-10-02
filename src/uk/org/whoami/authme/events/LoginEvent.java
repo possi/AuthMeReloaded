@@ -24,6 +24,7 @@ public class LoginEvent extends UncancellableEvent {
 		this.player = player;
 	}
 
+	@Deprecated // Doesn't make sense to modify the event, if the result is never processed
 	public void setLogin(boolean isLogin) {
 		this.isLogin = isLogin;
 	}

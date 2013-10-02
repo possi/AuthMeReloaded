@@ -24,6 +24,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import uk.org.whoami.authme.AuthMe;
+import uk.org.whoami.authme.api.API;
 import uk.org.whoami.authme.cache.backup.FileCache;
 import uk.org.whoami.authme.events.ResetInventoryEvent;
 import uk.org.whoami.authme.events.StoreInventoryEvent;
@@ -88,6 +89,7 @@ public class LimboCache {
             	ResetInventoryEvent event = new ResetInventoryEvent(player);
             	Bukkit.getServer().getPluginManager().callEvent(event);
             	if (!event.isCancelled()) {
+                    API.setPlayerInventory(player, new ItemStack[36], new ItemStack[4]);
             		player.sendMessage("Your inventory has been cleaned!");
             	}
             }
