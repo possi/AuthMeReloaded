@@ -80,6 +80,7 @@ import uk.org.whoami.authme.task.TimeoutTask;
 public class AuthMePlayerListener implements Listener {
 
     public static int gm = 0;
+    @Deprecated // thats crued
     public static HashMap<String, Integer> gameMode = new HashMap<String, Integer>();
 	private Utils utils = Utils.getInstance();
     private Messages m = Messages.getInstance();

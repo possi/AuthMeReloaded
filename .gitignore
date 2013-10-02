@@ -3,3 +3,14 @@
 # Package Files #
 *.war
 *.ear
+/bin
+
+# Eclipse stuff
+/.project
+/.classpath
+/.settings
+/.buildpath
+/.checkstyle
+
+# maven
+/target
