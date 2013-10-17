@@ -40,5 +40,9 @@ public class PasswordEncryptionEvent extends Event {
 	public String getPlayerName() {
 		return playerName;
 	}
+    
+    public static HandlerList getHandlerList() {
+        return handlers;
+    }
 
 }
